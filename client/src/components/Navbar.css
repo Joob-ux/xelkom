@@ -1,0 +1,55 @@
+.navbar {
+  position: fixed; top: 0; width: 100%; z-index: 100;
+  padding: 16px 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+.navbar.scrolled {
+  background: rgba(12,12,12,0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212,175,55,0.2);
+}
+.nav-logo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800; font-size: 1.5rem; letter-spacing: 3px;
+  color: var(--gold); cursor: default;
+}
+.nav-logo span { color: var(--text); }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.75); text-decoration: none;
+  font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase;
+  font-weight: 500; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-right { display: flex; align-items: center; gap: 10px; }
+.lang-btn {
+  background: transparent; border: 1px solid rgba(212,175,55,0.3);
+  color: var(--gold); padding: 6px 14px; font-size: 0.75rem;
+  cursor: pointer; font-family: 'Barlow', sans-serif; letter-spacing: 1px;
+  transition: all 0.2s;
+}
+.lang-btn:hover { background: rgba(212,175,55,0.1); }
+.nav-cta {
+  background: var(--gold); color: #0C0C0C;
+  padding: 10px 22px; font-size: 0.78rem; font-weight: 700;
+  font-family: 'Barlow', sans-serif; letter-spacing: 1.5px; text-transform: uppercase;
+  border: none; cursor: pointer; text-decoration: none; display: inline-block;
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--gold2); }
+.burger { display: none; background: none; border: none; color: var(--text); font-size: 1.4rem; cursor: pointer; }
+@media (max-width: 900px) {
+  .navbar { padding: 14px 24px; }
+  .nav-links { display: none; position: absolute; top: 60px; left: 0; right: 0;
+    background: #0C0C0C; flex-direction: column; padding: 20px 24px; gap: 16px;
+    border-bottom: 1px solid var(--border); }
+  .nav-links.open { display: flex; }
+  .burger { display: block; }
+}
+.nav-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}

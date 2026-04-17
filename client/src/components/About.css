@@ -1,0 +1,13 @@
+.about-section { padding: 80px 48px; background: #111111; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.why-list { margin-top: 28px; display: flex; flex-direction: column; }
+.why-item { display: flex; gap: 20px; align-items: flex-start; padding: 20px 0; border-bottom: 1px solid var(--border); }
+.why-item:first-child { border-top: 1px solid var(--border); }
+.why-num { font-family: 'Barlow Condensed', sans-serif; font-size: 2rem; font-weight: 800; color: rgba(212,175,55,0.2); line-height: 1; flex-shrink: 0; width: 36px; }
+.why-item h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; color: var(--gold); }
+.why-item p { color: rgba(255,255,255,0.85); font-size: 0.9rem; line-height: 1.7; }
+.metrics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.metric { background: #0C0C0C; padding: 32px 28px; }
+.metric-big { font-family: 'Barlow Condensed', sans-serif; font-size: 2.8rem; font-weight: 800; color: var(--gold); letter-spacing: -1px; }
+.metric-lbl { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(242,237,215,0.3); margin-top: 5px; }
+@media (max-width: 900px) { .about-inner { grid-template-columns: 1fr; } .about-section { padding: 60px 24px; } }
