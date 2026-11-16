@@ -14,7 +14,7 @@ export default function Team() {
       <div className="section-header">
         <div className="section-tag">Notre équipe / Our Team</div>
         <h2 className="section-title">Les experts Xelkom Valley</h2>
-        <p className="section-sub">Une équipe pluridisciplinaire alliant maîtrise technologique et expertise industrielle.</p>
+        <p className="section-sub">Une équipe pluridisciplinaire alliant développement logiciel, électronique et accompagnement client.</p>
       </div>
       <div className="team-grid">
         {members.map((m, i) => (

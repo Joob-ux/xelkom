@@ -30,13 +30,13 @@ export default function Contact() {
       </div>
       <div className="contact-inner">
         <div className="contact-info-col">
-          <p className="section-sub">Que ce soit pour une solution IT ou une machine industrielle, notre équipe est prête à vous accompagner.</p>
-          <p className="contact-sub-en">Whether for an IT solution or an industrial machine, our team is ready to assist you.</p>
+          <p className="section-sub">Que ce soit pour un site web, une formation ou un projet électronique, notre équipe est prête à vous accompagner.</p>
+          <p className="contact-sub-en">Whether for a website, training or an electronics project, our team is ready to assist you.</p>
           <div className="info-list">
             <div className="info-item"><span className="info-ico">📍</span><div><div className="info-lbl">Adresse</div><div className="info-val">Dakar, Soprime, Sénégal</div></div></div>
             <div className="info-item"><span className="info-ico">📞</span><div><div className="info-lbl">Téléphone</div><div className="info-val">+221 77 084 97 36</div><div className="info-val">+221 77 030 75 08</div></div></div>
             <div className="info-item"><span className="info-ico">💬</span><div><div className="info-lbl">WhatsApp</div><a href="https://wa.me/221770307508" target="_blank" rel="noreferrer" className="info-val info-link">+221 77 030 75 08</a></div></div>
-            <div className="info-item"><span className="info-ico">✉️</span><div><div className="info-lbl">Email</div><div className="info-val">contact@xelkomvalley.com</div></div></div>
+            <div className="info-item"><span className="info-ico">✉️</span><div><div className="info-lbl">Email</div><div className="info-val">moukhtardiop2768@gmail.com</div></div></div>
           </div>
           <a href="https://wa.me/221770307508" target="_blank" rel="noreferrer" className="wa-btn">💬 Écrire sur WhatsApp</a>
         </div>
@@ -51,8 +51,10 @@ export default function Contact() {
               <div className="cgrp"><label>Sujet</label>
                 <select name="subject" className="cinput cselect" value={form.subject} onChange={handle}>
                   <option value="">Choisir un sujet...</option>
-                  <option>Service IT</option>
-                  <option>Machine CNC / Industrielle</option>
+                  <option>Site web / application</option>
+                  <option>Formation</option>
+                  <option>Réseaux sociaux</option>
+                  <option>Électronique / IoT / Drones</option>
                   <option>Demande de devis</option>
                   <option>Partenariat</option>
                   <option>Autre</option>
