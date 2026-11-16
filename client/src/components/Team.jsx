@@ -4,10 +4,10 @@ import khadim from '../assets/khadim.png'
 import aliou from '../assets/aliou.png'
 
 const members = [
-  { photo: null,     initials: 'CP', name: 'Cheikh Pouye',  role: 'Directeur Général / CEO',        en: 'Chief Executive Officer' },
+  { photo: moukhtar, initials: 'MD', name: 'Mouhamadou Moukhtar Diop', role: 'Fondateur & CEO',  en: 'Founder & Chief Executive Officer' },
+  { photo: khadim,   initials: 'KN', name: 'Khadim Niang',  role: 'Co-fondateur',                   en: 'Co-Founder' },
+  { photo: null,     initials: 'CP', name: 'Cheikh Pouye',  role: 'Manager',                        en: 'Manager' },
   { photo: null,     initials: 'DD', name: 'Demba Diop',    role: 'Directeur Technique / CTO',      en: 'Chief Technology Officer' },
-  { photo: khadim,   initials: 'KN', name: 'Khadim Niang',  role: 'Resp. Développement Logiciel',   en: 'Software Development Manager' },
-  { photo: moukhtar, initials: 'MD', name: 'Moukhtar Diop', role: 'Ingénieur Systèmes Embarqués',   en: 'Embedded Systems Engineer' },
   { photo: aliou,    initials: 'AL', name: 'Aliou',         role: 'Commercial & Relations Clients', en: 'Sales & Client Relations' },
 ]
 
