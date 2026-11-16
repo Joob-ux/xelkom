@@ -1,21 +1,21 @@
 import './Services.css'
 
 const itServices = [
-  { icon: '💻', title: 'Développement Logiciel', desc: "Applications web et mobiles sur mesure, conçues pour performer et évoluer avec votre activité." },
-  { icon: '☁️', title: 'Cloud & Infrastructure', desc: "Migration cloud, architecture scalable et gestion d'infrastructure pour une performance optimale." },
-  { icon: '🔒', title: 'Cybersécurité', desc: "Protection des données, audit de sécurité et mise en conformité pour une tranquillité totale." },
-  { icon: '📊', title: 'Data & Analytics', desc: "Exploitez vos données pour prendre de meilleures décisions et anticiper les tendances du marché." },
-  { icon: '🤖', title: 'Intelligence Artificielle', desc: "Intégration de solutions IA pour automatiser vos processus et créer de la valeur ajoutée." },
-  { icon: '🛠️', title: 'Support & Maintenance IT', desc: "Assistance technique réactive et maintenance proactive pour garantir la continuité de vos opérations." },
+  { icon: '🌐', title: 'Sites web & applications', desc: "Sites vitrines, e-commerce, applications web et mobiles sur mesure, rapides et adaptés au mobile." },
+  { icon: '🧾', title: 'Logiciels de gestion', desc: "Ventes, stock, factures, caisse, paiements Wave et Orange Money : des outils simples pour piloter votre commerce." },
+  { icon: '🎓', title: 'Formation IT', desc: "Formations pratiques en informatique, développement et outils numériques, pour particuliers et entreprises." },
+  { icon: '📣', title: 'Gestion des réseaux sociaux', desc: "Création de contenu, publication et animation de vos pages pour développer votre visibilité en ligne." },
+  { icon: '🔒', title: 'Cybersécurité', desc: "Audit, sécurisation de vos systèmes et sensibilisation de vos équipes aux bonnes pratiques." },
+  { icon: '🤖', title: 'Intelligence Artificielle', desc: "Assistants, automatisations et analyse de données pour gagner du temps au quotidien." },
 ]
 
 const industrialServices = [
-  { icon: '⚙️', title: 'Machines CNC', desc: "Conception et fabrication de machines CNC haute précision (fraisage, tournage, découpe) sur mesure." },
-  { icon: '🏭', title: 'Automatisation industrielle', desc: "Systèmes d'automatisation sur mesure pour optimiser vos lignes de production et réduire les coûts." },
-  { icon: '🦾', title: 'Robotique', desc: "Intégration de bras robotiques et systèmes autonomes pour des tâches répétitives ou dangereuses." },
-  { icon: '🔧', title: 'Maintenance & SAV', desc: "Entretien préventif et curatif de vos équipements industriels pour maximiser leur durée de vie." },
-  { icon: '📐', title: "Bureau d'études", desc: "Conception 2D/3D (CAO/DAO), prototypage et validation technique avant fabrication en série." },
-  { icon: '🔩', title: 'Pièces & Usinage', desc: "Fabrication de pièces mécaniques à la demande avec des tolérances serrées selon vos cahiers des charges." },
+  { icon: '🔌', title: 'Électronique & systèmes embarqués', desc: "Conception de cartes et programmation de microcontrôleurs (ESP32, STM32) et Raspberry Pi." },
+  { icon: '📡', title: 'IoT & capteurs', desc: "Objets connectés et capteurs pour mesurer, suivre et contrôler vos équipements à distance." },
+  { icon: '🦾', title: 'Robotique', desc: "Conception et intégration de systèmes robotisés pour l'enseignement et l'industrie." },
+  { icon: '🚁', title: 'Drones', desc: "Prises de vue aériennes, inspection et développement de solutions autour des drones." },
+  { icon: '📐', title: 'Conception 3D & prototypage', desc: "Modélisation 3D, prototypage et validation technique de vos produits avant fabrication." },
+  { icon: '🔧', title: 'Maintenance & support', desc: "Entretien de vos équipements informatiques et électroniques, assistance réactive." },
 ]
 
 function ServiceCard({ icon, title, desc, variant }) {
@@ -34,7 +34,7 @@ export default function Services() {
       <div className="section-header">
         <div className="section-tag">Services IT & Technologie</div>
         <h2 className="section-title">Solutions numériques</h2>
-        <p className="section-sub">Des services IT complets pour accompagner votre transformation digitale.</p>
+        <p className="section-sub">Du site web à la formation, tout pour réussir votre présence numérique.</p>
       </div>
       <div className="services-grid">
         {itServices.map((s, i) => <ServiceCard key={i} {...s} />)}
@@ -43,9 +43,9 @@ export default function Services() {
       <div className="services-divider"></div>
 
       <div className="section-header">
-        <div className="section-tag red">Services Industrie</div>
-        <h2 className="section-title">Machines & conception industrielle</h2>
-        <p className="section-sub">Conception, fabrication et maintenance de machines industrielles de précision.</p>
+        <div className="section-tag red">Électronique & Robotique</div>
+        <h2 className="section-title">Électronique, IoT, robotique & drones</h2>
+        <p className="section-sub">Du capteur au prototype, nous concevons des systèmes électroniques sur mesure.</p>
       </div>
       <div className="services-grid">
         {industrialServices.map((s, i) => <ServiceCard key={i} {...s} variant="ind" />)}
