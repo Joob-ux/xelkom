@@ -1,14 +1,11 @@
 import './Team.css'
 import moukhtar from '../assets/moukhtar.png'
 import khadim from '../assets/khadim.png'
-import aliou from '../assets/aliou.png'
 
 const members = [
   { photo: moukhtar, initials: 'MD', name: 'Mouhamadou Moukhtar Diop', role: 'Fondateur & CEO',  en: 'Founder & Chief Executive Officer' },
   { photo: khadim,   initials: 'KN', name: 'Khadim Niang',  role: 'Co-fondateur',                   en: 'Co-Founder' },
   { photo: null,     initials: 'CP', name: 'Cheikh Pouye',  role: 'Manager',                        en: 'Manager' },
-  { photo: null,     initials: 'DD', name: 'Demba Diop',    role: 'Directeur Technique / CTO',      en: 'Chief Technology Officer' },
-  { photo: aliou,    initials: 'AL', name: 'Aliou',         role: 'Commercial & Relations Clients', en: 'Sales & Client Relations' },
 ]
 
 export default function Team() {
