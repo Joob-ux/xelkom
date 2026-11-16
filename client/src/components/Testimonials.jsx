@@ -8,7 +8,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="testi-section">
+    <section id="testimonials" className="testi-section">
       <div className="section-header" style={{ textAlign: 'center' }}>
         <div className="section-tag" style={{ justifyContent: 'center' }}>Témoignages / Testimonials</div>
         <h2 className="section-title">Ce que disent nos clients</h2>

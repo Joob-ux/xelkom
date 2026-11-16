@@ -13,7 +13,7 @@ const faqs = [
 export default function FAQ() {
   const [open, setOpen] = useState(null)
   return (
-    <section className="faq-section">
+    <section id="faq" className="faq-section">
       <div className="section-header">
         <div className="section-tag">FAQ</div>
         <h2 className="section-title">Questions fréquentes</h2>
